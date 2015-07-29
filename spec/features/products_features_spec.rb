@@ -18,10 +18,10 @@ feature 'homepage' do
   context 'when clicking on gender to shop for' do
     scenario 'page should display list of relevant clothing items' do 
       visit '/products'
-      expect(page).to have_content 'Home'
-      expect(page).to have_content 'Men\'s'
-      expect(page).to have_content 'Women\'s'
-      expect(page).to have_content 'Gift Vouchers'
+      page.find('#mens').click
+      save_and_open_page
+      expect(page).to have_content "Leather Driver Saddle Loafers"
+      expect(page).to have_content "Flip Flops"
     end
 
     scenario 'should display men\'s clothing'do

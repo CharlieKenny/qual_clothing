@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def male
+    @products = Product.all
   end
 
 end
