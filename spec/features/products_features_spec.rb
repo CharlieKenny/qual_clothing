@@ -19,7 +19,6 @@ feature 'homepage' do
     scenario 'page should display list of relevant clothing items for men' do 
       visit '/products'
       page.find('#mens').click
-      save_and_open_page
       expect(page).to have_content "Leather Driver Saddle Loafers"
       expect(page).to have_content "Flip Flops"
     end
@@ -27,9 +26,8 @@ feature 'homepage' do
     scenario 'page should display list of relevant clothing items for women' do 
       visit '/products'
       page.find('#womens').click
-      save_and_open_page
       expect(page).to have_content "Almond Toe Court Shoes"
-      expect(page).to have_content "Suede shoes"
+      expect(page).to have_content "Suede Shoes"
     end
 
     scenario 'should display men\'s clothing'do

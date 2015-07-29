@@ -3,7 +3,6 @@
     "coverage": {
       "/Users/CKenny/Projects/qual_clothing/app/models/product.rb": [
         1,
-        null,
         null
       ],
       "/Users/CKenny/Projects/qual_clothing/app/controllers/products_controller.rb": [
@@ -30,6 +29,6 @@
         null
       ]
     },
-    "timestamp": 1438183628
+    "timestamp": 1438195553
   }
 }

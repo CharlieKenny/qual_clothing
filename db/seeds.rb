@@ -1,6 +1,6 @@
 Product.delete_all
 Product.create! id: 1, name: "Almond Toe Court Shoes", colour: "Patent black", category: "Women's Footwear", quantity: 5, price: 99.00
-Product.create! id: 2, name: "Suede shoes", colour: "Blue", category: "Women's Footwear", quantity: 4, price: 42.00
+Product.create! id: 2, name: "Suede Shoes", colour: "Blue", category: "Women's Footwear", quantity: 4, price: 42.00
 Product.create! id: 3, name: "Leather Driver Saddle Loafers", colour: "Tan", category: "Men's Footwear", quantity: 12, price: 34.00
 Product.create! id: 4, name: "Flip Flops", colour: "Red", category: "Men's Footwear", quantity: 6, price: 19.00
 Product.create! id: 5, name: "Flip Flops", colour: "Blue", category: "Men's Footwear", quantity: 0, price: 19.00
