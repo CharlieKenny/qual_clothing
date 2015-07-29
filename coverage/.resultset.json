@@ -1,0 +1,25 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/CKenny/Projects/qual_clothing/app/controllers/products_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/CKenny/Projects/qual_clothing/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1438163537
+  }
+}

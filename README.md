@@ -1,1 +1,1 @@
-# qual_clothing
+# qual_clothing [![Build Status](https://travis-ci.org/CharlieKenny/qual_clothing.png)](https://travis-ci.org/CharlieKenny/qual_clothing)
