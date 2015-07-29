@@ -3,7 +3,11 @@ class ProductsController < ApplicationController
   def index
   end
 
-  def male
+  def mens
+    @products = Product.all
+  end
+
+  def womens
     @products = Product.all
   end
 

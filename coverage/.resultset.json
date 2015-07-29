@@ -16,6 +16,10 @@
         2,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/CKenny/Projects/qual_clothing/app/controllers/application_controller.rb": [
@@ -26,6 +30,6 @@
         null
       ]
     },
-    "timestamp": 1438182108
+    "timestamp": 1438183628
   }
 }

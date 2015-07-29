@@ -1,0 +1,9 @@
+<div>
+  <% @products.each do |product| %>
+    <% if product.category.include? "Women" %>
+      <div>
+      <%= product.name %>: <%= product.price %> <br>
+      </div>
+    <% end %>
+  <% end %>
+</div>

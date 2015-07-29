@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root "products#index"
   resources :products do
     member do
-      get "male"
-      get "female"
+      get "mens"
+      get "womens"
     end
   end
 
