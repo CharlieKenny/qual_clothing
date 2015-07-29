@@ -12,5 +12,3 @@ Product.create! id: 10, name: "Sharkskin Waistcoat", colour: "Charcoal", categor
 Product.create! id: 11, name: "Lightweight Patch Pocket Blazer", colour: "Deer", category: "Men's Formalwear", quantity: 1, price: 175.50
 Product.create! id: 12, name: "Bird Print Dress", colour: "Black", category: "Women's Formalwear", quantity: 10, price: 270.00
 Product.create! id: 13, name: "Mid Twist Cut­Out Dress", colour: "Pink", category: "Women's Formalwear", quantity: 5, price: 540.00
-
-
