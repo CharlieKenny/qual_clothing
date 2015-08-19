@@ -1,8 +1,26 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/CKenny/Projects/qual_clothing/app/models/cart.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/CKenny/Projects/qual_clothing/app/models/product.rb": [
         1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/CKenny/Projects/qual_clothing/app/controllers/products_controller.rb": [
@@ -12,11 +30,21 @@
         null,
         null,
         1,
+        6,
+        null,
+        null,
+        1,
         2,
         null,
         null,
         1,
-        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
         null,
         null,
         null
@@ -27,8 +55,19 @@
         null,
         1,
         null
+      ],
+      "/Users/CKenny/Projects/qual_clothing/app/controllers/carts_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1438195553
+    "timestamp": 1440000178
   }
 }

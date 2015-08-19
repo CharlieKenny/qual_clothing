@@ -1,9 +1,9 @@
 <div>
   <% @products.each do |product| %>
-    <% if product.category.include? "Women" %>
-      <div>
-      <%= product.name %>: <%= product.price %> <br>
-      </div>
+    <%= div_for product do %>
+      <% if product.category.include? "Women" %>
+        <%= product.name %>: <%= product.price %> <br>
+      <% end %>
     <% end %>
   <% end %>
 </div>

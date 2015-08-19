@@ -1,9 +1,12 @@
 <div>
   <% @products.each do |product| %>
-    <% if product.category.include? "Men" %>
-      <div>
-      <%= product.name %>: <%= product.price %> <br>
-      </div>
+    <%= div_for product do %>
+      <% if product.category.include? "Men" %>
+        <%= product.name %>: <%= product.price %> 
+         <%= form_for product do |f| %>
+          <%= f.submit 'Add to cart' %>
+         <% end %>
+      <% end %>
     <% end %>
   <% end %>
 </div>

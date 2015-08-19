@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'homepage' do 
+feature 'Products' do 
   scenario 'A user can choose what gender they want to buy for' do 
     visit '/products'
     expect(page).to have_content 'Men'
@@ -13,6 +13,7 @@ feature 'homepage' do
     expect(page).to have_content 'Men\'s'
     expect(page).to have_content 'Women\'s'
     expect(page).to have_content 'Gift Vouchers'
+    expect(page).to have_content 'View Cart'
   end
 
   context 'when clicking on gender to shop for' do
@@ -35,7 +36,11 @@ feature 'homepage' do
       page.find('#mens').click
       expect(current_path).to have_content "/products/1/mens"
     end
+
+    scenario 'should display women\'s clothing'do
+      visit '/products'
+      page.find('#womens').click
+      expect(current_path).to have_content "/products/1/womens"
+    end
   end
 end
-
-      # scenario 'should display a list of mens clothing items' do 

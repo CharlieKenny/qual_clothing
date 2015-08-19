@@ -1,0 +1,5 @@
+<% Cart.first.products.each do |product| %>
+  <%= product.name %><br> 
+    <li><%= link_to "Remove from cart", cart_path(product), method: :delete %></li> 
+<% end %>
+
