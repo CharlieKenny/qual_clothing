@@ -1,5 +1,9 @@
 class CartsController < ApplicationController
 
+  def index
+    @total = Cart.first.total_price
+  end
+
   def destroy
   product = Cart.first.products.find(params[:id])
   product.remove_from_cart

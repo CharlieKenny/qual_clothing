@@ -1,5 +1,7 @@
 <% Cart.first.products.each do |product| %>
-  <%= product.name %><br> 
-    <li><%= link_to "Remove from cart", cart_path(product), method: :delete %></li> 
-<% end %>
+  <%= product.name %> <%= product.price %> <br> 
+    <%= link_to "Remove from cart", cart_path(product), method: :delete, class: 'btn-info'%> 
+<% end %><br>
 
+
+Total: <%= number_to_currency(@total, unit: "£") %>
