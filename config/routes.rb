@@ -3,13 +3,14 @@ Rails.application.routes.draw do
   root "products#index"
   resources :carts do
   end
-  resources :products do
-    member do
-      get "mens"
-      get "womens"
-    end
+#   resource :product do
+#     member do
+#       get "mens"
+#       get "womens"
+#     end
   
-end
+# end
+  resources :products, path: '/(:dept)/products'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

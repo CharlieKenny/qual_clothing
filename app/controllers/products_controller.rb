@@ -1,14 +1,18 @@
 class ProductsController < ApplicationController
 
   def index
+    @mensproducts = Product.all.select {|product| product.category.include? "Men" } 
+    @womensproducts = Product.all.select {|product| product.category.include? "Women" }
+    params["dept"] ||= "index"
+    render params["dept"]
   end
 
   def mens
-    @products = Product.all
+    @mensproducts
   end
 
   def womens
-    @products = Product.all
+    @womensproducts
   end
 
   def update
@@ -16,7 +20,7 @@ class ProductsController < ApplicationController
     product.add_to_cart
     cart = Cart.first_or_create
     cart.products << product
-    redirect_to mens_product_path
+    redirect_to(:back)
   end
 
   

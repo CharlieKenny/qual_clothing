@@ -5,10 +5,9 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Men's</a></li>
-        <li><a href="#">Women's</a></li> 
-        <li><a href="#">Gift Vouchers</a></li> 
+        <li class="active"><%= link_to 'Home', products_path %></li>
+        <li><%= link_to "Men's", products_path(:mens)%></li>
+        <li><%= link_to "Women's", products_path(:womens)%></li> 
         <li><%= link_to 'View Cart', carts_path, id: "view_cart" %></li>
 
       </ul>

@@ -1,9 +1,16 @@
 <div>
-  <% @products.each do |product| %>
+  <% @womensproducts.each do |product| %>
     <%= div_for product do %>
-      <% if product.category.include? "Women" %>
-        <%= product.name %>: <%= product.price %> <br>
+          <%= product.name %>: <%= number_to_currency(product.price, unit: "£") %> <br>
+          Number in stock: <%= product.quantity%><br>
+          <% if %>
+           <% product.quantity <= 0 %>
+           <%= "This product is out of stock" %>
+          <%else%>
+          <%= form_for product do |f| %>
+          <%= f.submit 'Add to cart' %>
+          <%end%>
+         <% end %>
       <% end %>
     <% end %>
-  <% end %>
 </div>
