@@ -1,17 +1,29 @@
-<div>
+<div class='container'>
+  <div class='row'>
+    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
-  <% @mensproducts.each do |product| %>
-    <%= div_for product do %>
-        <%= product.name %>: <%= number_to_currency(product.price, unit: "£") %> <br>
-        Number in stock: <%= product.quantity%><br>
-          <% if %>
-           <% product.quantity <= 0 %>
-           <%= "This product is out of stock" %>
-          <%else%>
-           <%= form_for product do |f| %>
-           <%= f.submit 'Add to cart' %>
-          <%end%>
-         <% end %>
+      <% @mensproducts.each do |product| %>
+      <div class="productbox">
+        <div class="imgthumb img-responsive">
+          <img src="http://cache.mrporter.com/images/products/365810/365810_mrp_fr_xl.jpg">
+        </div>
+        <div class="caption">
+        <%= div_for product do %>
+          <h5><%= product.name %> <%= number_to_currency(product.price, unit: "£") %> <br>
+            Number in stock: <%= product.quantity%></h5>
+              <% if %>
+                <% product.quantity <= 0 %>
+                <%= "This product is out of stock" %>
+              <%else%>
+                <%= form_for product do |f| %>
+                  <%= f.submit 'Add to cart' %>
+                <%end%>
+              <% end %>
+        </div>
+        <% end %>
+      </div>
       <% end %>
-    <% end %>
+    </div>
+  </div>
 </div>
+
