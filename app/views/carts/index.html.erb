@@ -1,22 +1,23 @@
-<% if %>
-<% @cart.products.length > 0 %>
-  <% Cart.first.products.each do |product| %><br>
-    <%= product.name %> <%= number_to_currency(product.price, unit: "£") %>
-    <br> 
-      <%= link_to "Remove from cart", cart_path(product), method: :delete, class: 'btn-info'%> 
-  <% end %>
-<% else %>
-  <%= "Your cart is empty, get shopping!" %>
-<%end%>
-<br>
-
-<%= form_for @cart do |f| %>
-  Promocode: <%= f.text_field :promocode %>
-  <%= f.submit "Apply" %>
-  <%end%>
-
-Promocode applied: <%= @cart.promocode %> <br>
-
-Total: <%= number_to_currency(@total, unit: "£") %>
-
+<div class="container">
+  <div class="jumbotron cart">
+    <% if %>
+      <% @cart.products.length > 0 %>
+      <% @cart.products.each do |product| %><br>
+        <%= product.name %> <%= number_to_currency(product.price, unit: "£") %>     
+        <%= link_to "Remove", cart_path(product), method: :delete, class: 'btn'%> 
+      <% end %>
+    <% else %>
+      <%= "Your cart is empty, get shopping!" %>
+    <%end%>
+    <br>
+    <br>
+    <%= form_for @cart do |f| %>
+      Promocode: <%= f.text_field :promocode %>
+      <%= f.submit "Apply", :id => 'promo_apply'%>
+    <%end%>
+    Promocode applied: <%= @cart.promocode %>
+    <br>
+    Total: <%= number_to_currency(@total, unit: "£") %>
+  </div>
+</div>
 

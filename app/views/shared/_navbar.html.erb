@@ -6,14 +6,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Qual Clothing</a>
+      <%= link_to "QualClothing", root_path, class: "navbar-brand" %>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to 'Home', products_path %></li>
         <li><%= link_to "Men's", products_path(:mens)%></li>
         <li><%= link_to "Women's", products_path(:womens)%></li> 
-        <li><%= link_to 'View Cart', carts_path, id: "view_cart" %></li>
+        <li><%= link_to "View Cart", carts_path, id: "view_cart" %> </li>
       </ul>
     </div>
   </div>

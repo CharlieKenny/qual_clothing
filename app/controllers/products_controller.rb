@@ -22,7 +22,4 @@ class ProductsController < ApplicationController
     cart.products << product
     redirect_to(:back)
   end
-
-  
-
 end

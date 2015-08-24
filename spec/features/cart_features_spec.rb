@@ -18,7 +18,7 @@ feature 'shopping cart' do
     click_button('Add to cart')
     end
     click_link('View Cart')
-    click_link('Remove from cart')
+    click_link('Remove')
     expect(page).to_not have_content 'Leather Driver Saddle Loafers'    
   end
 

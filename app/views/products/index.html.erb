@@ -1,11 +1,14 @@
-<div class="thumbnail">
-
-  <%= link_to "Men", products_path(:mens), id: "mens", class: "btn"%>
-  <!-- <img src="http://i.ebayimg.com/00/s/NTY2WDg0OA==/z/-vsAAOSwEK9TsqQA/$_32.JPG?set_id=880000500F"> -->
+<div class="heading">
+  QualClothing
 </div>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 men_landing_page img-responsive" style="height: 600px">
+          <%= link_to image_tag("men"), products_path(:mens), id: "mens", class: "img-landing" %>
+        </div>
 
-<div class="thumbnail">
-
-  <%= link_to "Women", products_path(:womens), id: "womens", class: "btn"%>
+        <div class="col-sm-12 col-md-6 col-lg-6 women_landing_page img-responsive">
+          <%= link_to image_tag("http://g03.a.alicdn.com/kf/HTB1NILGIXXXXXaGXVXXq6xXFXXXF/2015-New-Arrival-Summer-Style-Women-Beach-Boho-font-b-Dress-b-font-Sexy-O-Neck.jpg"), products_path(:womens), id: "womens", class: "womensimg img-landing"%>   
+        </div>
+    </div>
 </div>
-

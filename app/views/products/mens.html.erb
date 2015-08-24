@@ -1,26 +1,25 @@
 <div class='container'>
   <div class='row'>
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-
-      <% @mensproducts.each do |product| %>
-      <div class="productbox">
+      <% @mensproducts.sort.each do |product| %>
+      <div class=" col-lg-4 col-md-5 col-sm-6 productbox" style="padding: 0;">
         <div class="imgthumb img-responsive">
-          <img src="http://cache.mrporter.com/images/products/365810/365810_mrp_fr_xl.jpg">
+          <%= image_tag(product.id.to_s + " " + product.name) %>
         </div>
         <div class="caption">
-        <%= div_for product do %>
-          <h5><%= product.name %> <%= number_to_currency(product.price, unit: "£") %> <br>
-            Number in stock: <%= product.quantity%></h5>
-              <% if %>
-                <% product.quantity <= 0 %>
-                <%= "This product is out of stock" %>
-              <%else%>
-                <%= form_for product do |f| %>
-                  <%= f.submit 'Add to cart' %>
-                <%end%>
-              <% end %>
+          <%= div_for product do %>
+            <h5><%= product.name %> <%= number_to_currency(product.price, unit: "£") %> 
+              <br>
+                Number in stock: <%= product.quantity%></h5>
+                <% if %>
+                  <% product.quantity <= 0 %>
+                  <%= "This product is out of stock" %>
+                <%else%>
+                  <%= form_for product do |f| %>
+                    <%= f.submit 'Add to cart', :class => 'product_add' %>
+                  <%end%>
+                <% end %>
         </div>
-        <% end %>
+          <% end %>
       </div>
       <% end %>
     </div>

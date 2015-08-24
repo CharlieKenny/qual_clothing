@@ -1,43 +1,37 @@
-#mens {
-
-
-}
-
-#womens {
-
-  
-}
-
-.view_cart {
-  
-}
-
 .productbox {
+  
   margin-bottom: 20px;
-    position: relative;
- border: 1px solid #ddd;
-border-radius: 4px;
--webkit-transition: all .2s ease-in-out; 
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out; 
 }
 
 .caption {
   padding:10px;
   background-color:rgba(0,0,0,0.7);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-height: 40%;
-    overflow: hidden;
-    font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;  
+  max-height: 40%;
+  overflow: hidden;
+  font-size: 11px;
   color: #FFF;
 
 }
 
-input[type=submit] {
+.product_add {
 
   width: 100%;
   color: black;
+  font-size: 11px;
 
+}
+
+#promo_apply {
+
+  width:100px;
 }
 
 h5 {
@@ -49,3 +43,52 @@ h5 {
 
 .img-responsive img{
   width: 100%;
+}
+
+
+.heading{
+  text-align: center;
+  font-size: 100px;
+}
+
+
+.jumbotron {
+
+  text-align: center;
+  width: 100%;
+}
+
+.men_landing_page{
+
+  height:100%;
+
+}
+
+.cart{
+
+  font-size: 30px;
+}
+
+.women_landing_page{
+  height:100% ;
+}
+@media(max-width: 600px) {
+  .heading {
+    font-size: 60px;
+  }
+}
+
+#womens {
+
+}
+
+#mens {
+
+}
+
+.view_cart {
+  
+}
+
+
+

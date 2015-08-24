@@ -16,11 +16,11 @@ class CartsController < ApplicationController
   end
 
   def destroy
-  product = Cart.first.products.find(params[:id])
-  product.remove_from_cart
-  Cart.first.products.destroy(params[:id])
-  Cart.first.remove_promocode
-  redirect_to carts_path
+    product = Cart.first.products.find(params[:id])
+    product.remove_from_cart
+    Cart.first.products.destroy(params[:id])
+    Cart.first.remove_promocode
+    redirect_to carts_path
   end
 
   private

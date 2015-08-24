@@ -28,7 +28,7 @@ class Cart < ActiveRecord::Base
     if self.promo_validation(promocode)
        self.discount = self.promocodes[promocode]["discount"]
        self.save
-     end
+    end
   end
 
   def promo_validation(promocode)
