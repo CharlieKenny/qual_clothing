@@ -1,4 +1,4 @@
-# qual_clothing [![Build Status](https://travis-ci.org/CharlieKenny/qual_clothing.png)](https://travis-ci.org/CharlieKenny/qual_clothing)
+[![Build Status](https://travis-ci.org/CharlieKenny/qual_clothing.png)](https://travis-ci.org/CharlieKenny/qual_clothing)  [![Code Climate](https://codeclimate.com/github/CharlieKenny/qual_clothing/badges/gpa.svg)](https://codeclimate.com/github/CharlieKenny/qual_clothing)
 
 # QualClothing
 
