@@ -1,19 +1,94 @@
+.productbox {
+  
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out; 
+}
+
+.caption {
+  padding:10px;
+  background-color:rgba(0,0,0,0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;  
+  max-height: 40%;
+  overflow: hidden;
+  font-size: 11px;
+  color: #FFF;
+
+}
+
+.product_add {
+
+  width: 100%;
+  color: black;
+  font-size: 11px;
+
+}
+
+#promo_apply {
+
+  width:100px;
+}
+
+h5 {
+  margin-top: 0px;
+  color: white;
+  max-height: 30px;
+  overflow: hidden;
+}
+
+.img-responsive img{
+  width: 100%;
+}
+
+
+.heading{
+  text-align: center;
+  font-size: 100px;
+}
+
+
+.jumbotron {
+
+  text-align: center;
+  width: 100%;
+}
+
+.men_landing_page{
+
+  height:100%;
+
+}
+
+.cart{
+
+  font-size: 30px;
+}
+
+.women_landing_page{
+  height:100% ;
+}
+@media(max-width: 600px) {
+  .heading {
+    font-size: 60px;
+  }
+}
+
+#womens {
+
+}
+
 #mens {
 
+}
+
+.view_cart {
   
 }
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+
+
