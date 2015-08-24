@@ -44,6 +44,8 @@ The app contains two models and controllers for the Cart and Products. For simpl
 
 The vouchers did pose a bit of a conundrum and I wanted to store them as a flat file rather than have them stored in the DB. I originally thought my way would be simple but it came with its own difficulties. In future iterations I would create a Promocode/Discounts model and store the info in the DB for increased flexibility.
 
+I hope you enjoy the stock imagery as much as I do.
+
 Set-up and Use
 ------
 The following steps rely on the assumption you have Ruby installed, if that's not the case please follow [this](https://rvm.io/rubies/installing)tutorial to get up and running.
