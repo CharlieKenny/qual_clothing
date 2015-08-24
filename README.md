@@ -46,7 +46,7 @@ The vouchers did pose a bit of a conundrum and I wanted to store them as a flat 
 
 I hope you enjoy the stock imagery as much as I do.
 
-![alt text](link "Screenshot")
+![alt text](app/assets/images/screenshot.png "Screenshot")
 
 Set-up and Use
 ------
