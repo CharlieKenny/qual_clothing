@@ -46,6 +46,8 @@ The vouchers did pose a bit of a conundrum and I wanted to store them as a flat 
 
 I hope you enjoy the stock imagery as much as I do.
 
+![alt text](link "Screenshot")
+
 Set-up and Use
 ------
 The following steps rely on the assumption you have Ruby installed, if that's not the case please follow [this](https://rvm.io/rubies/installing)tutorial to get up and running.
