@@ -59,6 +59,7 @@ To run the site in your browser please follow these steps in your terminal:
 - ``` bundle ```
 - ``` bin/rake db:create ``` 
 - ``` bin/rake db:migrate ```
+- ``` bin/rake db:seed ```
 - ``` bin/rails server ```
 - Visit [http://localhost:3000](http://localhost:3000)
 - Use ``` rspec ``` to run the tests
